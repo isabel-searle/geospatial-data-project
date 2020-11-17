@@ -44,25 +44,35 @@ First step: I will make a first filter according to the requirements and I will 
     - I will check the nearest dog hairdresser place around the already decided office. But this is not going to be a mandatory requirement for my decision.
 
 
-## 2. Companies collection analysis
+## 2. Country
 
 I will filter the companies following the points 1 and 3.
 
 - Design companies
 - Tech startups that have raised > 1 Million dollars.
 
+## 2. County
 
-## 3. Population research
+I will filter the companies following the points 5 and 6.
+
+- Airports
+
+I got the airports from tha API
+
+- Population
 
 I got a dataset from [Department of Finance of California](http://www.dof.ca.gov/Forecasting/Demographics/Projections/).
 I loaded the dataset in tableau public where I had to clean and prepare the data before using it. Finally I could make a dynamic [population pyramid](https://public.tableau.com/profile/isabel.searle.riesgo#!/vizhome/CaliforniaPopulationPyramid/California?publish=yes) where I could filter by county and see the evolution during the years. 
 
 
+## 3. API requests
+
+I tried to automate the query process.
 
 
-https://raw.githubusercontent.com/codeforamerica/click_that_hood/master/public/data/los-angeles.geojson
+## 4. Offices
 
-
+This is the last point that I couldn't finish because I would like to reflect the final data in folium.
 
 ## Mistakes and waste of time:
 
