@@ -1,8 +1,10 @@
 # geospatial-data-project
 
-First step: I will make a first filter according to the requirements and I will see how can I get the corresponding information.
 
 ## 1. Requirements --> possible resource
+
+First step: I will make a first filter according to the requirements and I will see how can I get the corresponding information.
+
 
 1. Designers like to go to design talks and share knowledge. There must be some nearby companies that also do design. 
 
@@ -10,7 +12,7 @@ First step: I will make a first filter according to the requirements and I will 
 
 2. 30% of the company have at least 1 child.
 
-    - To be searched through an API: schools, kindergartens,etc.
+    - To be searched through an API: kindergartens.
 
 3. Developers like to be near successful tech startups that have raised at least 1 Million dollars.
 
@@ -46,25 +48,42 @@ First step: I will make a first filter according to the requirements and I will 
 
 I will filter the companies following the points 1 and 3.
 
-    - Design companies
-    - Tech startups that have raised > 1 Million dollars.
-
-
+- Design companies
+- Tech startups that have raised > 1 Million dollars.
 
 
 ## 3. Population research
 
+I got a dataset from [Department of Finance of California](http://www.dof.ca.gov/Forecasting/Demographics/Projections/).
+I loaded the dataset in tableau public where I had to clean and prepare the data before using it. Finally I could make a dynamic [population pyramid](https://public.tableau.com/profile/isabel.searle.riesgo#!/vizhome/CaliforniaPopulationPyramid/California?publish=yes) where I could filter by county and see the evolution during the years. 
 
 
-I got a dataset from [Department of Finance of California] (http://www.dof.ca.gov/Forecasting/Demographics/Projections/).
-I loaded the dataset in tableau public where I had to clean and prepare the data before using it. Finally I could make a dynamic [population pyramid] https://public.tableau.com/profile/isabel.searle.riesgo#!/vizhome/CaliforniaPopulationPyramid/California?publish=yes where I could filter by county and see the evolution during the years. 
 
 
-## MISTAKES:
+https://raw.githubusercontent.com/codeforamerica/click_that_hood/master/public/data/los-angeles.geojson
 
-- Start the filter from a wrong side: making population pyramides of the whole word.
-        - Solution: schematize step by step before starting to use the tools.
+
+
+## Mistakes and waste of time:
+
+- Starting the analysis from a wrong side: making population pyramides of the whole word. [population pyramid](https://public.tableau.com/profile/isabel.searle.riesgo#!/vizhome/PopulationPyramid_16053098713460/PopulationPyramid?publish=yes), data from [The World Bank](https://data.worldbank.org/indicator/SP.POP.TOTL).
+
+    - Solution: schematize step by step before starting to use the tools.
+
 - Filtering without using $unwind: I spent too much time cleaning the dataframe.
-        - Solution: read the class notes before starting to use the tools.
-I got a dataset from [The World Bank] (https://data.worldbank.org/indicator/SP.POP.TOTL).
-I loaded the dataset in tableau public where I had to clean and prepare the data before using it. Finally I could make a dynamic [population pyramid] https://public.tableau.com/profile/isabel.searle.riesgo#!/vizhome/PopulationPyramid_16053098713460/PopulationPyramid?publish=yes where I could filter by country and see the evolution during the years. 
+
+     - Solution: read the class notes before starting to use the tools.
+
+- MongoDB: trying to create the field "coor" following the class notes  step by step but not taking into account that I had teminated my iterator.
+
+    - Solution: make a better debuging.
+
+- Forgetting to import libraries in the funtions file. 
+
+    - Solution: make a better debuging.
+
+- Calling the response of the queries with the same name.
+
+    - Solution: no commments...
+
+
